@@ -1,6 +1,7 @@
 const clock = document.querySelector("div.clock");
 const hour = clock.querySelector("div.main span:first-child");
 const minute = clock.querySelector("div.main span:last-child");
+const second = clock.querySelector("div.sub span.second");
 
 const numberToTime = (number) => number.toString().padStart(2, "0");
 
@@ -13,7 +14,7 @@ function getClock() {
   // clock.textContent = `${hours}:${minutes}:${seconds}`;
   hour.textContent = hours
   minute.textContent = minutes
-
+  second.textContent = seconds
 }
 getClock();
 setInterval(getClock, 1000);
