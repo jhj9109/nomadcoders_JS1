@@ -2,7 +2,7 @@ const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:nth-child(2)");
 const temperature = document.querySelector("#weather span:last-child");
 
-const API_KEY = "5b68d81c3f0926db5f7f69a1ddd54d63";
+const API_KEY = "5b68d81c3f0926db5f7f69a1ddd54d63"; // 해당 키는 비활성화상태
 
 function onGeoOk(position) {
   const coords = position.coords;
